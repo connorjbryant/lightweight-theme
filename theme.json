@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
+  "version": 3,
   "settings": {
     "color": {
       "palette": [
@@ -12,7 +12,8 @@
       "custom": false
     },
     "spacing": {
-      "customSpacingSize": true
+      "customSpacingSize": true,
+      "units": [ "px", "em", "rem", "%" ]
     },
     "typography": {
       "customFontSize": true,
@@ -21,9 +22,6 @@
         { "slug": "medium", "size": "1.125rem", "name": "Medium" },
         { "slug": "large", "size": "2rem", "name": "Large" }
       ]
-    },
-    "custom": {
-      "units": [ "px", "em", "rem", "%" ]
     }
   },
   "styles": {

@@ -1,0 +1,25 @@
+{
+  "name": "lightweight-theme-blocks",
+  "version": "1.0.0",
+  "description": "Custom blocks for Lightweight Theme",
+  "scripts": {
+    "build:css": "gulp css",
+    "build:js": "terser src/js/main.js -o build/js/main.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "gulp watch",
+    "watch": "npm run watch:css"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.6.0",
+    "ajv": "^8.0.0",
+    "ajv-keywords": "^5.0.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.89.0",
+    "terser": "^5.39.2"
+  }
+}
