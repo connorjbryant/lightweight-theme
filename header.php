@@ -14,6 +14,18 @@
 		<div class="site-title">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 		</div>
+
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<nav class="site-nav" aria-label="Primary Menu">
+				<?php
+					wp_nav_menu([
+						'theme_location' => 'primary',
+						'menu_class'     => 'primary-menu',
+						'container'      => false,
+					]);
+				?>
+			</nav>
+		<?php endif; ?>
 	</div>
 </header>
 <main class="site-main">

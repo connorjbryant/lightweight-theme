@@ -1,0 +1,30 @@
+{
+  "apiVersion": 2,
+  "name": "lightweight-theme/hero",
+  "title": "Hero Section",
+  "category": "layout",
+  "icon": "cover-image",
+  "description": "A cohesive hero section for your theme.",
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Welcome to Our Website"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "This is a hero section. Customize it to fit your brand."
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./build/hero-block.js",
+  "editorStyle": "file:./build/hero-editor.css",
+  "style": "file:./build/hero-style.css",
+  "render": "file:./render.php"
+}
